@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário 5</title>
+</head>
+<body>
+    <header> 
+        <div class="header">
+            <h2>Cadastro Pessoal</h2>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form action="Form5/banco" method="POST" enctype="multipart/form-data">
+
+                <fieldset class="em_linha">
+                    <legend>Dados Pessoais</legend>
+                    <div class="container principal1">
+                        <div class="topo_left">
+                            <label>Nome: </label>
+                            <label>RG: </label>
+                            <label>CPF: </label>
+                            <label>Telefone: </label>
+                            <label>Celular: </label>
+                        </div>
+
+                        <div class="topo_right">
+                            <input type="text" name="nome" placeholder=" Nome Completo" required minlength="2">
+                            <input type="number" name="rg">
+                            <input type="number" name="cpf" required minlength="11">
+                            <input type="tel" name="telefone">
+                            <input type="tel" name="celular" required minlength="11">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="em_linha">
+                    <legend>Endereço</legend>
+                    <div class="container principal2">
+                        <div class="centre_left">
+                            <label>Logradouro: </label>
+                            <label>Número: </label>
+                            <label>Bairro: </label>
+                            <label>Estado: </label>
+                            <label>Cidade: </label>
+                            <label>CEP: </label>
+                        </div>
+
+                        <div class="centre_right">
+                            <input type="text" name="endereço" placeholder=" Rua / Av ..." required>
+                            <input type="number" name="numero" required>
+                            <input type="text" name="bairro">
+
+                            <select name="estado" required>
+                                <option></option>
+                                <option> AC</option>
+                                <option> AL</option>
+                                <option> AP</option>
+                                <option> AM</option>
+                                <option> BA</option>
+                                <option> CE</option>
+                                <option> DF</option>
+                                <option> ES</option>
+                                <option> GO</option>
+                                <option> MA</option>
+                                <option> MT</option>
+                                <option> MS</option>
+                                <option> MG</option>
+                                <option> PA</option>
+                                <option> PB</option>
+                                <option> PR</option>
+                                <option> PE</option>
+                                <option> PI</option>
+                                <option> RJ</option>
+                                <option> RN</option>
+                                <option> RS</option>
+                                <option> RO</option>
+                                <option> RR</option>
+                                <option> SC</option>
+                                <option> SP</option>
+                                <option> SE</option>
+                                <option> TO</option>                                
+                            </select>
+
+                            <input type="text" name="cidade" required>
+                            <input type="number" name="cep">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="em_coluna">
+                    <legend>Mensagem</legend>
+                    <div class="container principal3">
+                        <div class="bottom_title">
+                            <label>Solicite seu orçamento: </label>
+                        </div>
+
+                        <div class="bottom_message">
+                            <textarea type="te" name="mensagem" maxlength="9000" placeholder="Digite aqui sua mensagem" required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="button">
+                    <input type="submit" value="Enviar" id="button">
+                </div>
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
